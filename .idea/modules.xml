@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" filepath="$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-payroll/hr-payroll.iml" filepath="$PROJECT_DIR$/hr-payroll/hr-payroll.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-worker/hr-worker.iml" filepath="$PROJECT_DIR$/hr-worker/hr-worker.iml" />
     </modules>
