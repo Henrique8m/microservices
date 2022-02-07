@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/hr-payroll/pom.xml" />
         <option value="$PROJECT_DIR$/hr-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/hr-api-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/hr-config-server/pom.xml" />
       </list>
     </option>
   </component>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hr-api-gateway-zuul/hr-api-gateway-zuul.iml" filepath="$PROJECT_DIR$/hr-api-gateway-zuul/hr-api-gateway-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hr-config-server/hr-config-server.iml" filepath="$PROJECT_DIR$/hr-config-server/hr-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" filepath="$PROJECT_DIR$/hr-eureka-server/hr-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-payroll/hr-payroll.iml" filepath="$PROJECT_DIR$/hr-payroll/hr-payroll.iml" />
       <module fileurl="file://$PROJECT_DIR$/hr-worker/hr-worker.iml" filepath="$PROJECT_DIR$/hr-worker/hr-worker.iml" />
