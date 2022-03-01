@@ -16,7 +16,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter{
 	@Autowired
-	private BCryptPasswordEncoder passowordEnconder;
+	private BCryptPasswordEncoder passwordEnconder;
 	
 	@Autowired
 	private JwtAccessTokenConverter accessTokenConverter;
@@ -38,7 +38,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory() 
 		.withClient("myappname123")                                      //client_id que é o nome da applicação
-		.secret(passowordEnconder.encode("myappsecret123"))              //client_password a senha da applicação
+		.secret(passwordEnconder.encode("myappsecret123"))              //client_password a senha da applicação
 		.scopes("read", "write")                                         //Autorizações do clente em questão
 		.authorizedGrantTypes("password")                                //o tipo de criptografia que vai usar nas credenciais do usuario - usaremos o tipo password
 		.accessTokenValiditySeconds(86400);                              // Tempo de expiração deste token, em ms
