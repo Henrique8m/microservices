@@ -1,6 +1,7 @@
 package com.rodrigues.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -26,6 +27,12 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	
 	@Autowired
 	private AuthenticationManager authenticationManeger;
+	
+	@Value("${oauth.client.name}")
+	private String clientName;
+	
+	@Value("${oauth.client.secret}")
+	private String clientSecret;
 
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
@@ -37,8 +44,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients.inMemory() 
-		.withClient("myappname123")                                      //client_id que é o nome da applicação
-		.secret(passwordEnconder.encode("myappsecret123"))              //client_password a senha da applicação
+		.withClient(clientName)                                      //client_id que é o nome da applicação
+		.secret(passwordEnconder.encode(clientSecret))              //client_password a senha da applicação
 		.scopes("read", "write")                                         //Autorizações do clente em questão
 		.authorizedGrantTypes("password")                                //o tipo de criptografia que vai usar nas credenciais do usuario - usaremos o tipo password
 		.accessTokenValiditySeconds(86400);                              // Tempo de expiração deste token, em ms
