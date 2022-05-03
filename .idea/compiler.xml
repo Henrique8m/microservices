@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hr-payroll" />
         <module name="hr-config-server" />
+        <module name="hr-oauth" />
         <module name="hr-eureka-server" />
         <module name="hr-worker" />
         <module name="hr-api-gateway-zuul" />
@@ -17,6 +18,7 @@
       <module name="hr-api-gateway-zuul" target="11" />
       <module name="hr-config-server" target="11" />
       <module name="hr-eureka-server" target="11" />
+      <module name="hr-oauth" target="11" />
       <module name="hr-payroll" target="11" />
       <module name="hr-worker" target="11" />
     </bytecodeTargetLevel>
@@ -26,6 +28,7 @@
       <module name="hr-api-gateway-zuul" options="-parameters" />
       <module name="hr-config-server" options="-parameters" />
       <module name="hr-eureka-server" options="-parameters" />
+      <module name="hr-oauth" options="-parameters" />
       <module name="hr-payroll" options="-parameters" />
       <module name="hr-worker" options="-parameters" />
     </option>
