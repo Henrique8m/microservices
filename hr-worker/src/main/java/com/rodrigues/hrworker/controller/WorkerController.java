@@ -23,8 +23,8 @@ public class WorkerController {
 
     private static Logger logger = LoggerFactory.getLogger(WorkerController.class);
 
-    @Value("${test.config}")
-    private String testConfig;
+//    @Value("${test.config}")
+//    private String testConfig;
 
     @Autowired
     private WorkerService service;
@@ -33,7 +33,7 @@ public class WorkerController {
 
     @GetMapping(value = "/configs")
     public ResponseEntity<Void> testConfig(){
-        logger.info("Config = " + testConfig);
+//        logger.info("Config = " + testConfig);
         return ResponseEntity.noContent().build();
     }
 
